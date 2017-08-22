@@ -26,3 +26,9 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+*ngFor指令的用法
+
+*ngFor="let i of name";
+
+类似Vue的 v-for用法，只不过，一个是in，一个是of,一个需要let  一个不需要。同时，ngFor可以多次嵌套
