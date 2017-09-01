@@ -40,5 +40,20 @@ template解析ngfor指令，li解析ngif指令，同时使用两个指令在一�
 *ngIf指令的用法
 *ngIf="true"
 类似Vue的V-if用法，
+NG由src/main.ts作为程序的入口
 
+main.ts使用app/app.module.ts作为模块加载器
 
+app.module.ts规定了各个模块，即各个组件。
+
+@ngModule下面的  declarations规定了当前模块所需要的组件。
+@ngModule下面的  bootstrap规定了当前程序的跟组件，  其他组件需要在跟组件中使用
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+seletor html标签  上面就是<app-root></app-root>
+templateUrl 是tem模版的相对地址
+styleUrls 是当前模版所依赖的样式文件地址
